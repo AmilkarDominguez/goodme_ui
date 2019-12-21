@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 256 256" style="enable-background:new 0 0 256 256;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#000000;stroke-width:8;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#000000;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+</style>
+<g>
+	<path id="ic_person_24px" class="st0" d="M69,128c14.08,0,25.5-11.42,25.5-25.5S83.08,77,69,77s-25.5,11.42-25.5,25.5
+		S54.92,128,69,128z M69,140.75c-17.02,0-51,8.54-51,25.5V179h102v-12.75C120,149.29,86.02,140.75,69,140.75z"/>
+	<path id="ic_person_24px_1_" class="st0" d="M187,128c14.08,0,25.5-11.42,25.5-25.5S201.08,77,187,77s-25.5,11.42-25.5,25.5
+		S172.92,128,187,128z M187,140.75c-17.02,0-51,8.54-51,25.5V179h102v-12.75C238,149.29,204.02,140.75,187,140.75z"/>
+</g>
+<g>
+	<path d="M183.82,231h-111c-8.82,0-16-6.69-16-14.91v-21.43c0-2.06,1.79-3.73,4-3.73s4,1.67,4,3.73v21.43c0,4.11,3.59,7.45,8,7.45
+		h111c4.41,0,8-3.34,8-7.45v-17.7c0-2.06,1.79-3.73,4-3.73s4,1.67,4,3.73v17.7C199.82,224.31,192.64,231,183.82,231z"/>
+</g>
+<g>
+	<line class="st1" x1="195.61" y1="194.98" x2="180.61" y2="209.98"/>
+	<line class="st1" x1="195.61" y1="194.98" x2="210.61" y2="209.98"/>
+</g>
+</svg>

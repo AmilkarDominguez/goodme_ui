@@ -1,0 +1,94 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Perfil</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid fixed>
+    <ion-row>
+      <ion-col offset-lg="3" size-lg="6" size-md="12">
+        <div align="center">
+          <img class="img-profile m-2" src="/assets/icons/user.svg" />
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col offset-lg="3" size-lg="6" size-md="12">
+        <ion-list>
+          <ion-list-header>
+            <ion-label><b>Información personales</b></ion-label>
+          </ion-list-header>
+          <ion-item>
+            <ion-label>
+              Nombre: 
+            </ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>
+              Fecha de Nacimiento: 
+            </ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>
+              Peso: 
+            </ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>
+              Altura: 
+            </ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>
+              Correo: 
+            </ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>
+              Teléfono:
+            </ion-label>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col offset-lg="3" size-lg="6" size-md="12">
+        <ion-list>
+          <ion-list-header>
+            <ion-label><b>Ajustes</b></ion-label>
+          </ion-list-header>
+
+          <ion-item routerLink="/teacher">
+            <ion-buttons slot="end">
+              <ion-icon src="/assets/icons/edit.svg" size="large"></ion-icon>
+            </ion-buttons>
+            <ion-label>
+              Editar información
+            </ion-label>
+          </ion-item>
+
+          <ion-item routerLink="/tabs-c">
+            <ion-buttons slot="end">
+              <ion-icon src="/assets/icons/change.svg" size="large"></ion-icon>
+            </ion-buttons>
+            <ion-label>
+              Modo estudiante
+            </ion-label>
+          </ion-item>
+
+          <ion-item (click)="logout()">
+            <ion-buttons slot="end">
+              <ion-icon src="/assets/icons/logout.svg" size="large"></ion-icon>
+            </ion-buttons>
+            <ion-label>
+              Cerrar sesión
+            </ion-label>
+          </ion-item>
+
+        </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

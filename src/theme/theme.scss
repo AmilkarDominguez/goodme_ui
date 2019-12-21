@@ -1,0 +1,365 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito&display=swap");
+:root,
+:root[mode="md"],
+:root[mode="ios"] {
+  --ion-font-family: "Nunito";
+  font-family: var(--ion-font-family) !important;
+}
+
+.p-0 {
+  padding: 0px !important;
+}
+.p-1 {
+  padding: 1% !important;
+}
+.p-2 {
+  padding: 2% !important;
+}
+.p-4 {
+  padding: 4% !important;
+}
+.p-8 {
+  padding: 8% !important;
+}
+.p-10 {
+  padding: 10% !important;
+}
+.p-20 {
+  padding: 20% !important;
+}
+.m-0 {
+  margin: 0px !important;
+}
+.m-1 {
+  margin: 1% !important;
+}
+.m-2 {
+  margin: 2% !important;
+}
+.m-4 {
+  margin: 4% !important;
+}
+.m-8 {
+  margin: 8% !important;
+}
+.m-10 {
+  margin: 10% !important;
+}
+.m-20 {
+  margin: 20% !important;
+}
+
+.img-profile {
+  width: 35%;
+  height: 35%;
+  border-radius: 50%;
+  //background: var(--ion-color-dark);
+  //border: 4px solid var(--ion-color-dark);
+}
+.logo {
+  height: 50%;
+}
+.img-logo {
+  margin-top: 4% !important;
+  padding: 0px !important;
+  width: 100% !important;
+}
+ion-input {
+  border-radius: 50px !important;
+  border: 1px solid var(--color-primary-1) !important;
+}
+
+ion-textarea {
+  border-radius: 25px !important;
+  border: 1px solid var(--color-primary-1) !important;
+}
+.img-form {
+  border-radius: 25px !important;
+  border: 1px solid var(--color-primary-1) !important;
+}
+.fab-cancel {
+  border-radius: 50px !important;
+  border: 1px solid var(--color-primary-1) !important;
+  color: var(--color-primary-1) !important;
+}
+.password-login {
+  border-radius: 50px !important;
+  border: 1.5px solid var(--color-primary-1) !important;
+  ion-input {
+    border: none !important;
+  }
+}
+
+//Remove line ion-item
+ion-item {
+  --highlight-color-focused: none !important;
+}
+ion-datetime {
+  border-radius: 50px !important;
+  border: 1px solid var(--color-primary-1) !important;
+}
+/*
+.input {
+    height: 50px !important;
+    padding: 1em !important;
+    border-radius: 50px;
+    //color: var(--color-primary-1) !important;
+    border: 1px solid var(--color-primary-1) !important;
+    --background: var(--color-white);
+}
+*/
+.input-select {
+  //height: 50px !important;
+  align-items: center;
+  vertical-align: middle;
+  border-radius: 50px;
+  color: var(--color-primary-1) !important;
+  border: 1px solid var(--color-primary-1) !important;
+  --background: var(--color-white) !important;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+ion-icon {
+  &.m {
+    width: 30px;
+    height: 30px;
+  }
+  &.big {
+    width: 50px;
+    height: 50px;
+  }
+  &.bigger {
+    width: 100px;
+    height: 100px;
+  }
+}
+.v-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.bg-primary_2 {
+  --color: var(--color-primary-1);
+  --background: var(--color-primary-2) !important;
+}
+
+.bg-primary {
+  --color: #ffffff;
+  --background: var(--color-primary-1) !important;
+}
+
+.bg-primary_gr {
+  --color: #ffffff;
+  --background: linear-gradient(
+    45deg,
+    var(--color-primary-4),
+    var(--color-primary-1) 25%,
+    var(--color-primary-3)
+  ) !important;
+}
+
+.bg-gray {
+  --background: var(--color-gray-1);
+}
+/*
+.footer {    
+    position: fixed !important;
+    left: 0 !important;
+    bottom: 0 !important;
+    padding-bottom: 2% !important;
+    width: 100% !important;
+}*/
+/*
+ion-tabs{
+    background-color: var(--color-gray-1) !important;
+    
+}
+ion-tab-bar{
+    height: 8%;
+    border-radius: 33px 33px 0px 0px !important;
+    box-shadow: 0px 3px 6px #0000002d !important;
+}*/
+/*
+ion-header {
+    background-color: var(--color-gray-1) !important;
+    height: 12%;
+}
+ion-toolbar {
+    height: 100%;
+    border-radius: 0px 0px 0px 60px !important; 
+    background-color: var(--color-gray-1) !important;
+    box-shadow: 0px 3px 6px #0000002d !important;
+}*/
+
+ion-card {
+  border-style: none !important;
+  box-shadow: none !important;
+}
+.card-content {
+  padding-top: 0 !important;
+}
+.error-message {
+  margin: 10px !important;
+}
+.text-danger {
+  color: var(--ion-color-danger);
+}
+.text-primary {
+  color: var(--color-primary-1);
+}
+
+.cell-title {
+  color: var(--color-primary);
+  background-color: var(--color-primary-2);
+  border: solid 1px var(--color-primary-1);
+  color: var(--color-primary-1);
+  padding: 5px;
+}
+
+.cell {
+  // background-color: #f7f7f7;
+  // border: solid 1px #ddd;
+  padding: 5px;
+}
+
+.center-content {
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+ion-toolbar {
+  .notification-icon-button {
+    --overflow: visible;
+
+    ion-badge {
+      position: absolute;
+      background: red;
+      opacity: 1 !important;
+      top: 0.2rem;
+      right: 0.2rem;
+    }
+  }
+}
+
+.icon-badge {
+  position: relative;
+  background: red;
+  top: 0.2rem;
+  right: 0.2rem;
+  opacity: 1 !important;
+  margin-bottom: 10px;
+  margin-left: 5px;
+}
+
+.verticalLine {
+  width: 0.5%;
+  height: 100px;
+  background: var(--color-primary-1);
+  margin: auto;
+  margin: 0 !important;
+  margin-left: 10%;
+}
+
+.toolbar-transparent {
+  padding-top: 4% !important;
+  padding-left: 4% !important;
+  padding-right: 4% !important;
+
+  position: fixed;
+  --background: transparent;
+  --ion-color-base: transparent !important;
+}
+.searchbar-transparent {
+  --background: transparent;
+  --ion-color-base: transparent !important;
+  --icon-color: white !important;
+  --clear-button-color: white !important;
+  --cancel-button-color: white !important;
+  .searchbar-input {
+    color: red !important;
+    border-radius: 50px;
+    color: white !important;
+    border: 1px solid white !important;
+    box-shadow: none !important;
+  }
+}
+.post {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.post-content {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.post-description{
+  margin-right: 4%;
+  margin-left: 4%;
+  margin-bottom: 4%;
+  width: 75%;
+}
+
+.post-options {
+  position: absolute;
+  bottom: 0;
+}
+
+.fab-home {
+  width: 55px !important;
+}
+
+.card-portrait{
+  flex-direction: initial;
+  position: relative;
+  background-color: red;
+  width: 100% !important;
+  height: 100% !important;
+  
+}
+.img-card-portrait{
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.card-content {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  display: -webkit-flex;
+  -webkit-flex-direction: row;
+  display: flex;
+  flex-direction: row;
+}
+
+
+.card-description{
+  margin-left: 8%;
+  margin-bottom: 4%;
+  width: 75%;
+  // height: 50px;
+  //background-color: red;
+  color: white;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.card-options {
+  margin-right: 4%;
+  margin-bottom: 4%;
+  //background-color: green;
+  width: 25%;
+  bottom: 1 !important;
+}
+
+
+
+

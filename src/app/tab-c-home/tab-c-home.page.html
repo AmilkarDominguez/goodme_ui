@@ -1,0 +1,43 @@
+<ion-content color="dark" fullscreen>
+
+  <ion-toolbar class="toolbar-transparent">
+    <ion-searchbar mode="md" class="searchbar-transparent" placeholder="Búscar"></ion-searchbar>
+    <ion-buttons mode="md" slot="end">
+      <ion-button (click)="onNotificationsClick()" class="notification-icon-button">
+        <ion-badge mode="ios" class="notification-badge">2</ion-badge>
+        <ion-icon color="white" slot="icon-only" name="chatboxes"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+
+  <div class="post" *ngFor="let item of [1,1,1,1,1,1]">
+    <div class="post-content">
+      <div class="post-description">
+        <ion-text color="white">
+          Descripción de menos de 50 letras asd asd as asd asda sdasd asd asdasdasd.
+        </ion-text>
+      </div>
+      <ion-fab vertical="bottom" horizontal="end" class="fab-home">
+        <ion-fab-button size="small">
+          <ion-icon size="small" src="/assets/icons/goodme.svg"></ion-icon>
+        </ion-fab-button>
+        <ion-fab-list side="top">
+          <ion-fab-button>
+            <ion-icon name="star" color="primary"></ion-icon>
+          </ion-fab-button>
+          <ion-fab-button>
+            <ion-icon name="person-add" color="primary"></ion-icon>
+          </ion-fab-button>
+        </ion-fab-list>
+      </ion-fab>
+    </div>
+    <img height="100%" width="100%"
+      src="https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
+      alt="">
+  </div>
+
+
+
+
+</ion-content>
