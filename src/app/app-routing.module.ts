@@ -44,6 +44,22 @@ const routes: Routes = [
     path: 'tab-s-profile',
     loadChildren: () => import('./tab-s-profile/tab-s-profile.module').then( m => m.TabSProfilePageModule)
   },
+  {
+    path: 'form-diet',
+    loadChildren: () => import('./form-diet/form-diet.module').then( m => m.FormDietPageModule)
+  },
+  {
+    path: 'form-food',
+    loadChildren: () => import('./form-food/form-food.module').then( m => m.FormFoodPageModule)
+  },
+  {
+    path: 'form-routine',
+    loadChildren: () => import('./form-routine/form-routine.module').then( m => m.FormRoutinePageModule)
+  },
+  {
+    path: 'form-exercise',
+    loadChildren: () => import('./form-exercise/form-exercise.module').then( m => m.FormExercisePageModule)
+  },
 ];
 
 @NgModule({

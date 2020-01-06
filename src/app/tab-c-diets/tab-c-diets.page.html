@@ -1,9 +1,72 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>tab-c-diets</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
+
+  <ion-segment [(ngModel)]="segment" scrollable>
+    <ion-segment-button value="diets" checked>
+      <ion-label>Dietas</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="foods">
+      <ion-label>Platos</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+
+  <div [ngSwitch]="segment">
+
+    <div *ngSwitchCase="'diets'">
+
+      <ion-list class="ion-padding">
+        <ion-item *ngFor="let item of [1,1,1,1,1,1]">
+          <ion-label>
+            <h2>Nombre dieta</h2>
+          </ion-label>
+          <ion-icon slot="end" name="more"></ion-icon>
+        </ion-item>
+      </ion-list>
+
+      <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+        <ion-fab-button routerLink="/form-diet">
+          <ion-icon name="add"></ion-icon>
+        </ion-fab-button>
+      </ion-fab>
+
+    </div>
+
+    <div *ngSwitchCase="'foods'">
+
+      <ion-grid fixed>
+        <ion-row class="ion-no-margin ion-no-padding">
+          <ion-col size="4" *ngFor="let item of [1,1,1,1,1,1]">
+            <div class="card-portrait">
+              <img class="img-card-portrait"
+                src="https://images.unsplash.com/photo-1543362906-acfc16c67564?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=701&q=80" />
+              <div class="card-content">
+                <div class="card-description">
+                  <ion-text color="white">
+                    Lorem ipsum dolor
+                  </ion-text>
+                </div>
+                <div class="card-options">
+                  <div class="ion-text-center">
+                    <ion-icon name="more" color="white"></ion-icon>
+                    <!-- <ion-checkbox color="primary"></ion-checkbox> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+      <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+        <ion-fab-button routerLink="/form-food">
+          <ion-icon name="add"></ion-icon>
+        </ion-fab-button>
+      </ion-fab>
+
+    </div>
+
+  </div>
+
+
+
 
 </ion-content>
