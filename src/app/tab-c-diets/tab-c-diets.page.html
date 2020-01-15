@@ -1,5 +1,4 @@
 <ion-content>
-
   <ion-segment [(ngModel)]="segment" scrollable>
     <ion-segment-button value="diets" checked>
       <ion-label>Dietas</ion-label>
@@ -33,12 +32,11 @@
 
     <div *ngSwitchCase="'foods'">
 
-      <ion-grid fixed>
-        <ion-row class="ion-no-margin ion-no-padding">
-
-          <ion-col size="4">
-            <div align="center">
-              <div class="add-content" style="margin: 0px;">
+      <ion-grid fixed class="ion-no-margin ion-no-padding">
+        <ion-row class="mp-0">
+          <ion-col size="4" class="mp-0">
+            <div align="center" class="p-1">
+              <div class="add-content p-1" style="margin: 0px;">
                 <ion-fab-button routerLink="/form-food">
                   <ion-icon name="add"></ion-icon>
                 </ion-fab-button>
@@ -46,8 +44,8 @@
             </div>
           </ion-col>
           
-          <ion-col size="4" *ngFor="let item of [1,1,1,1,1,1]">
-            <div class="card-portrait">
+          <ion-col class="mp-0" size="4" *ngFor="let item of [1,1,1,1,1,1]">
+            <div class="card-portrait p-1">
               <img class="img-card-portrait"
                 src="https://images.unsplash.com/photo-1543362906-acfc16c67564?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=701&q=80" />
               <div class="card-content">

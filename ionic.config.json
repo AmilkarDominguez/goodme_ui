@@ -1,5 +1,7 @@
 {
   "name": "goodme_ui",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

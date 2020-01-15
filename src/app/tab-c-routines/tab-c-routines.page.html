@@ -1,5 +1,4 @@
 <ion-content>
-
   <ion-segment [(ngModel)]="segment" scrollable>
     <ion-segment-button value="routines" checked>
       <ion-label>Rutinas</ion-label>
@@ -34,12 +33,12 @@
 
     <div *ngSwitchCase="'exercises'">
 
-      <ion-grid fixed>
-        <ion-row class="ion-no-margin ion-no-padding">
+      <ion-grid fixed class="ion-no-margin ion-no-padding">
+        <ion-row class="mp-0">
 
-          <ion-col size="4">
-            <div align="center">
-              <div class="add-content" style="margin: 0px;">
+          <ion-col size="4" class="mp-0">
+            <div align="center" class="p-1">
+              <div class="add-content p-1" style="margin: 0px;">
                 <ion-fab-button routerLink="/form-exercise">
                   <ion-icon name="add"></ion-icon>
                 </ion-fab-button>
@@ -47,8 +46,8 @@
             </div>
           </ion-col>
 
-          <ion-col size="4" *ngFor="let item of [1,1,1,1,1,1]">
-            <div class="card-portrait">
+          <ion-col class="mp-0" size="4" *ngFor="let item of [1,1,1,1,1,1]">
+            <div class="card-portrait p-1">
               <img class="img-card-portrait"
                 src="https://images.unsplash.com/photo-1520334435999-d992362bb3ad?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=598&q=80" />
               <div class="card-content">
