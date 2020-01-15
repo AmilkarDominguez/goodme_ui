@@ -14,7 +14,7 @@
 </ion-header>
 
 <ion-content>
-  <ion-grid fixed>
+  <ion-grid fixed class="ion-no-margin ion-no-padding">
     <ion-row>
       <ion-col offset-lg="3" size-lg="6" size-md="12">
         <div class="ion-text-center">
@@ -152,9 +152,10 @@
         </ion-list>
       </ion-col>
     </ion-row>
-    <ion-row class="ion-no-margin ion-no-padding">
-      <ion-col size="4" *ngFor="let item of [1,1,1,1,1,1]">
-        <div class="card-portrait">
+    
+    <ion-row class="mp-0">
+      <ion-col size="4" *ngFor="let item of [1,1,1,1,1,1]" class="mp-0">
+        <div class="card-portrait p-1">
           <img class="img-card-portrait"
             src="https://images.unsplash.com/photo-1567358636526-da8cf4ec3bd7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=653&q=80" />
           <div class="card-content">

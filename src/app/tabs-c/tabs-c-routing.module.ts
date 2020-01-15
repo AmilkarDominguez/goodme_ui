@@ -51,11 +51,11 @@ const routes: Routes = [
       }
     ]
   },
-  // {
-  //   path: '',
-  //   redirectTo: 'tab-c/home',
-  //   pathMatch: 'full'
-  // }
+  {
+    path: '',
+    redirectTo: 'tab-c/home',
+    pathMatch: 'full'
+  }
 ];
 
 @NgModule({

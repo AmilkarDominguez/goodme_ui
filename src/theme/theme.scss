@@ -316,7 +316,19 @@ ion-toolbar {
   width: 55px !important;
 }
 
+//margin for card-portrait
+.mp-0{
+  margin: 0px !important;
+  padding: 0px !important;
+}
+//padding for card-portrait
+.p-1{
+  padding: 1.5px !important;
+}
+
+
 .card-portrait{
+  margin: 0 !important;
   flex-direction: initial;
   position: relative;
   //background-color: red;
@@ -363,12 +375,14 @@ ion-toolbar {
 
 
 .add-content{
-  width: 120px;
-  height: 200px;
-  border-radius: 20px !important;
+  width: 100% !important;
+  height: 100% !important;
+  //border-radius: 20px !important;
   border: 1px solid var(--color-primary-1) !important;
   
   ion-fab-button{
-    margin-top: 65px !important;
+    margin-top: 50% !important;
+    margin-bottom: 50% !important;
   }
 }
+

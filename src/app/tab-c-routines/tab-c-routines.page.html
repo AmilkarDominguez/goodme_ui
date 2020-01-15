@@ -14,6 +14,14 @@
     <div *ngSwitchCase="'routines'">
 
       <ion-list class="ion-padding">
+
+        <ion-item routerLink="/form-routine">
+          <ion-label color="primary">
+            <h2>Crear nuevo</h2>
+          </ion-label>
+          <ion-icon slot="end" color="primary" name="add"></ion-icon>
+        </ion-item>
+
         <ion-item *ngFor="let item of [1,1,1,1,1,1]">
           <ion-label>
             <h2>Nombre rutina</h2>
@@ -22,18 +30,23 @@
         </ion-item>
       </ion-list>
 
-      <ion-fab vertical="bottom" horizontal="end" slot="fixed">
-        <ion-fab-button routerLink="/form-routine">
-          <ion-icon name="add"></ion-icon>
-        </ion-fab-button>
-      </ion-fab>
-
     </div>
 
     <div *ngSwitchCase="'exercises'">
 
       <ion-grid fixed>
         <ion-row class="ion-no-margin ion-no-padding">
+
+          <ion-col size="4">
+            <div align="center">
+              <div class="add-content" style="margin: 0px;">
+                <ion-fab-button routerLink="/form-exercise">
+                  <ion-icon name="add"></ion-icon>
+                </ion-fab-button>
+              </div>
+            </div>
+          </ion-col>
+
           <ion-col size="4" *ngFor="let item of [1,1,1,1,1,1]">
             <div class="card-portrait">
               <img class="img-card-portrait"
@@ -55,13 +68,7 @@
           </ion-col>
         </ion-row>
       </ion-grid>
-
-      <ion-fab vertical="bottom" horizontal="end" slot="fixed">
-        <ion-fab-button routerLink="/form-exercise">
-          <ion-icon name="add"></ion-icon>
-        </ion-fab-button>
-      </ion-fab>
-
+      
     </div>
 
   </div>
