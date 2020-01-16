@@ -1,0 +1,82 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-buttons>
+        <ion-back-button text="" defaultHref="/tabs-s"></ion-back-button>
+      </ion-buttons>
+    </ion-buttons>
+    <ion-title>Requisitos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-grid fixed>
+    <ion-row>
+
+      <ion-col size="12">
+        <ion-list class="ion-no-margin">
+          <ion-list-header>
+            <ion-label><b>Información personales</b></ion-label>
+          </ion-list-header>
+          <ion-item lines="none">
+            <ion-label>
+              Nombre: 
+            </ion-label>
+          </ion-item>
+          <ion-item lines="none">
+            <ion-label>
+              Edad: 
+            </ion-label>
+          </ion-item >
+          <ion-item lines="none">
+            <ion-label>
+              Género: 
+            </ion-label>
+          </ion-item>
+          <ion-item lines="none">
+            <ion-label>
+              Peso: 
+            </ion-label>
+          </ion-item>
+          <ion-item lines="none">
+            <ion-label>
+              Altura: 
+            </ion-label>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+
+      <ion-col size="12">
+        <ion-label color="primary">Lesiones</ion-label>
+        <ion-input mode="md" color="primary" placeholder="Lesiones" class="ion-padding"></ion-input>
+      </ion-col>
+      <ion-col size="12">
+        <ion-label color="primary">Alergias</ion-label>
+        <ion-input mode="md" color="primary" placeholder="Alergias" class="ion-padding"></ion-input>
+      </ion-col>
+      <ion-col size="12">
+        <ion-label color="primary">Objetivo</ion-label>
+        <ion-textarea mode="md" class="ion-padding" color="primary" placeholder="Mi objetivo es...">
+        </ion-textarea>
+      </ion-col>
+      <ion-col size="12">
+        <ion-label color="primary">Otros</ion-label>
+        <ion-textarea mode="md" class="ion-padding" color="primary" placeholder="Otros...">
+        </ion-textarea>
+      </ion-col>
+
+    </ion-row>
+
+    <!-- Buttons -->
+    <ion-row>
+      <ion-col size="12">
+        <div align="center">
+          <ion-button expand="full" shape="round" routerLink="/tabs-s">
+            Aceptar
+          </ion-button>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

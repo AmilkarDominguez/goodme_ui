@@ -60,6 +60,18 @@ const routes: Routes = [
     path: 'form-exercise',
     loadChildren: () => import('./form-exercise/form-exercise.module').then( m => m.FormExercisePageModule)
   },
+  {
+    path: 'form-requirement',
+    loadChildren: () => import('./form-requirement/form-requirement.module').then( m => m.FormRequirementPageModule)
+  },
+  {
+    path: 'profile-coach',
+    loadChildren: () => import('./profile-coach/profile-coach.module').then( m => m.ProfileCoachPageModule)
+  },
+  {
+    path: 'form-pay',
+    loadChildren: () => import('./form-pay/form-pay.module').then( m => m.FormPayPageModule)
+  },
 ];
 
 @NgModule({
