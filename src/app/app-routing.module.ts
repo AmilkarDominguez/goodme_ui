@@ -72,6 +72,14 @@ const routes: Routes = [
     path: 'form-pay',
     loadChildren: () => import('./form-pay/form-pay.module').then( m => m.FormPayPageModule)
   },
+  {
+    path: 'coach-subscribers',
+    loadChildren: () => import('./coach-subscribers/coach-subscribers.module').then( m => m.CoachSubscribersPageModule)
+  },
+  {
+    path: 'subscriber',
+    loadChildren: () => import('./subscriber/subscriber.module').then( m => m.SubscriberPageModule)
+  },
 ];
 
 @NgModule({

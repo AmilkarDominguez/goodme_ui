@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-buttons>
+        <ion-back-button text="" defaultHref="/tabs-s"></ion-back-button>
+      </ion-buttons>
+    </ion-buttons>
+    <ion-title>Mis suscriptores</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen>
+  <ion-toolbar>
+    <ion-searchbar></ion-searchbar>
+  </ion-toolbar>
+  <ion-list class="ion-padding">
+    <ion-item *ngFor="let item of [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]" routerLink="/subscriber">
+      <ion-icon slot="end" name="more"></ion-icon>
+      <ion-avatar slot="start">
+        <img src="/assets/icons/user.svg">
+      </ion-avatar>
+      <ion-label>Nombre suscriptor</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
