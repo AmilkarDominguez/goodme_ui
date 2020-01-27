@@ -4,6 +4,11 @@ import { Routes, RouterModule } from '@angular/router';
 import { TabsCPage } from './tabs-c.page';
 
 const routes: Routes = [
+  // {
+  //   path: '',
+  //   redirectTo: 'tab-c/home',
+  //   pathMatch: 'full'
+  // },
   {
     path: '',
     component: TabsCPage,
@@ -50,12 +55,8 @@ const routes: Routes = [
         pathMatch: 'full'
       }
     ]
-  },
-  {
-    path: '',
-    redirectTo: 'tab-c/home',
-    pathMatch: 'full'
   }
+
 ];
 
 
@@ -63,4 +64,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class TabsCPageRoutingModule {}
+export class TabsCPageRoutingModule { }

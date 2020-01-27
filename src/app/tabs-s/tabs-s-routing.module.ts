@@ -4,6 +4,11 @@ import { Routes, RouterModule } from '@angular/router';
 import { TabsSPage } from './tabs-s.page';
 
 const routes: Routes = [
+  // {
+  //   path: '',
+  //   redirectTo: 'tabs-s/home',
+  //   pathMatch: 'full'
+  // },
   {
     path: '',
     component: TabsSPage,
@@ -50,11 +55,6 @@ const routes: Routes = [
         pathMatch: 'full'
       }
     ]
-  },
-  {
-    path: '',
-    redirectTo: 'tabs-s/home',
-    pathMatch: 'full'
   }
 ];
 

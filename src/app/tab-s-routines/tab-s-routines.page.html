@@ -1,9 +1,209 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>tab-s-routines</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
+  <ion-segment [(ngModel)]="segment" scrollable>
+    <ion-segment-button value="lunes" checked>
+      <ion-label><span text-capitalize>Lun</span></ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="martes">
+      <ion-label><span text-capitalize>Mar</span></ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="miercoles">
+      <ion-label><span text-capitalize>Mie</span></ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="jueves">
+      <ion-label><span text-capitalize>Jue</span></ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="viernes">
+      <ion-label><span text-capitalize>Vie</span></ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="sabado">
+      <ion-label><span text-capitalize>Sab</span></ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="domingo">
+      <ion-label><span text-capitalize>Dom</span></ion-label>
+    </ion-segment-button>
+    
+  </ion-segment>
+
+  <div [ngSwitch]="segment">
+
+    <div *ngSwitchCase="'lunes'">
+      <ion-grid fixed class="ion-no-margin ion-no-padding">
+        <ion-row class="mp-0">
+          <ion-col class="mp-0" size="4" *ngFor="let item of [1,1,1,1,1,1]">
+            <div class="card-portrait p-1" routerLink="/exercise-detail">
+              <img class="img-card-portrait"
+                src="https://images.unsplash.com/photo-1520334435999-d992362bb3ad?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=598&q=80" />
+              <div class="card-content">
+                <div class="card-description">
+                  <ion-text color="white">
+                    Lorem ipsum dolor
+                  </ion-text>
+                </div>
+                <div class="card-options">
+                  <div class="ion-text-center">
+                    <ion-icon name="more" color="white"></ion-icon>
+                    <!-- <ion-checkbox color="primary"></ion-checkbox> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+    <div *ngSwitchCase="'martes'">
+      <ion-grid fixed class="ion-no-margin ion-no-padding">
+        <ion-row class="mp-0">
+          <ion-col class="mp-0" size="4" *ngFor="let item of [1,1,1,1,1,1]">
+            <div class="card-portrait p-1" routerLink="/exercise-detail">
+              <img class="img-card-portrait"
+                src="https://images.unsplash.com/photo-1520334435999-d992362bb3ad?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=598&q=80" />
+              <div class="card-content">
+                <div class="card-description">
+                  <ion-text color="white">
+                    Lorem ipsum dolor
+                  </ion-text>
+                </div>
+                <div class="card-options">
+                  <div class="ion-text-center">
+                    <ion-icon name="more" color="white"></ion-icon>
+                    <!-- <ion-checkbox color="primary"></ion-checkbox> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+    <div *ngSwitchCase="'miercoles'">
+      <ion-grid fixed class="ion-no-margin ion-no-padding">
+        <ion-row class="mp-0">
+          <ion-col class="mp-0" size="4" *ngFor="let item of [1,1,1,1,1,1]">
+            <div class="card-portrait p-1" routerLink="/exercise-detail">
+              <img class="img-card-portrait"
+                src="https://images.unsplash.com/photo-1520334435999-d992362bb3ad?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=598&q=80" />
+              <div class="card-content">
+                <div class="card-description">
+                  <ion-text color="white">
+                    Lorem ipsum dolor
+                  </ion-text>
+                </div>
+                <div class="card-options">
+                  <div class="ion-text-center">
+                    <ion-icon name="more" color="white"></ion-icon>
+                    <!-- <ion-checkbox color="primary"></ion-checkbox> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+    <div *ngSwitchCase="'jueves'">
+      <ion-grid fixed class="ion-no-margin ion-no-padding">
+        <ion-row class="mp-0">
+          <ion-col class="mp-0" size="4" *ngFor="let item of [1,1,1,1,1,1]">
+            <div class="card-portrait p-1" routerLink="/exercise-detail">
+              <img class="img-card-portrait"
+                src="https://images.unsplash.com/photo-1520334435999-d992362bb3ad?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=598&q=80" />
+              <div class="card-content">
+                <div class="card-description">
+                  <ion-text color="white">
+                    Lorem ipsum dolor
+                  </ion-text>
+                </div>
+                <div class="card-options">
+                  <div class="ion-text-center">
+                    <ion-icon name="more" color="white"></ion-icon>
+                    <!-- <ion-checkbox color="primary"></ion-checkbox> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+    <div *ngSwitchCase="'viernes'">
+      <ion-grid fixed class="ion-no-margin ion-no-padding">
+        <ion-row class="mp-0">
+          <ion-col class="mp-0" size="4" *ngFor="let item of [1,1,1,1,1,1]">
+            <div class="card-portrait p-1" routerLink="/exercise-detail">
+              <img class="img-card-portrait"
+                src="https://images.unsplash.com/photo-1520334435999-d992362bb3ad?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=598&q=80" />
+              <div class="card-content">
+                <div class="card-description">
+                  <ion-text color="white">
+                    Lorem ipsum dolor
+                  </ion-text>
+                </div>
+                <div class="card-options">
+                  <div class="ion-text-center">
+                    <ion-icon name="more" color="white"></ion-icon>
+                    <!-- <ion-checkbox color="primary"></ion-checkbox> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+    <div *ngSwitchCase="'sabado'">
+      <ion-grid fixed class="ion-no-margin ion-no-padding">
+        <ion-row class="mp-0">
+          <ion-col class="mp-0" size="4" *ngFor="let item of [1,1,1,1,1,1]">
+            <div class="card-portrait p-1" routerLink="/exercise-detail">
+              <img class="img-card-portrait"
+                src="https://images.unsplash.com/photo-1520334435999-d992362bb3ad?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=598&q=80" />
+              <div class="card-content">
+                <div class="card-description">
+                  <ion-text color="white">
+                    Lorem ipsum dolor
+                  </ion-text>
+                </div>
+                <div class="card-options">
+                  <div class="ion-text-center">
+                    <ion-icon name="more" color="white"></ion-icon>
+                    <!-- <ion-checkbox color="primary"></ion-checkbox> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+    <div *ngSwitchCase="'domingo'">
+      <ion-grid fixed class="ion-no-margin ion-no-padding">
+        <ion-row class="mp-0">
+          <ion-col class="mp-0" size="4" *ngFor="let item of [1,1,1,1,1,1]">
+            <div class="card-portrait p-1" routerLink="/exercise-detail">
+              <img class="img-card-portrait"
+                src="https://images.unsplash.com/photo-1520334435999-d992362bb3ad?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=598&q=80" />
+              <div class="card-content">
+                <div class="card-description">
+                  <ion-text color="white">
+                    Lorem ipsum dolor
+                  </ion-text>
+                </div>
+                <div class="card-options">
+                  <div class="ion-text-center">
+                    <ion-icon name="more" color="white"></ion-icon>
+                    <!-- <ion-checkbox color="primary"></ion-checkbox> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+  </div>
+
+
+
 
 </ion-content>
