@@ -4,11 +4,10 @@ import { Routes, RouterModule } from '@angular/router';
 import { TabsCPage } from './tabs-c.page';
 
 const routes: Routes = [
-  // {
-  //   path: '',
-  //   redirectTo: 'tab-c/home',
-  //   pathMatch: 'full'
-  // },
+  {
+    path: '',
+    redirectTo: 'tab-c/home',
+  },
   {
     path: '',
     component: TabsCPage,
@@ -48,11 +47,6 @@ const routes: Routes = [
             loadChildren: '../tab-c-profile/tab-c-profile.module#TabCProfilePageModule'
           }
         ]
-      },
-      {
-        path: '',
-        redirectTo: 'home',
-        pathMatch: 'full'
       }
     ]
   }

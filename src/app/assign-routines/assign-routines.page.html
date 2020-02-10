@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-buttons>
+        <ion-back-button text="" defaultHref="/tabs-s"></ion-back-button>
+      </ion-buttons>
+    </ion-buttons>
+    <ion-title>Mis rutinas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+  <ion-list class="ion-padding">
+    <div *ngFor="let item of ['Pecho','Biceps','Triceps','Espalda','Pierna']">
+
+
+      <ion-item>
+        <ion-label>{{item}}</ion-label>
+        <ion-checkbox color="primary" checked slot="start"></ion-checkbox>
+      </ion-item>
+
+      <div>
+        <ion-grid fixed class="ion-no-margin ion-no-padding">
+          <ion-row class="mp-0">
+            <ion-col class="mp-0" size="4" *ngFor="let item of [1,1,1,1,1,1]">
+              <div class="card-portrait p-1" routerLink="/exercise-detail">
+                <img class="img-card-portrait"
+                  src="https://images.unsplash.com/photo-1520334435999-d992362bb3ad?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=598&q=80" />
+                <div class="card-content">
+                  <div class="card-description">
+                    <ion-text color="white">
+                      Lorem ipsum dolor
+                    </ion-text>
+                  </div>
+                  <div class="card-options">
+                    <div class="ion-text-center">
+                      <ion-icon name="more" color="white"></ion-icon>
+                      <!-- <ion-checkbox color="primary"></ion-checkbox> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </div>
+
+    </div>
+  </ion-list>
+
+</ion-content>

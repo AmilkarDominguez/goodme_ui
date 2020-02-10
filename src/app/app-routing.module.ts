@@ -88,6 +88,14 @@ const routes: Routes = [
     path: 'exercise-detail',
     loadChildren: () => import('./exercise-detail/exercise-detail.module').then( m => m.ExerciseDetailPageModule)
   },
+  {
+    path: 'assign-routines',
+    loadChildren: () => import('./assign-routines/assign-routines.module').then( m => m.AssignRoutinesPageModule)
+  },
+  {
+    path: 'assign-diets',
+    loadChildren: () => import('./assign-diets/assign-diets.module').then( m => m.AssignDietsPageModule)
+  },
 ];
 
 @NgModule({

@@ -8,6 +8,7 @@
     <ion-title>Suscriptor</ion-title>
   </ion-toolbar>
 </ion-header>
+
 <ion-content>
 
   <ion-segment [(ngModel)]="segment" scrollable>
@@ -95,41 +96,8 @@
         <h6>Rutinas para la semana</h6>
       </ion-text>
       <ion-list class="ion-padding">
-        <ion-item *ngFor="let item of ['Lunes','Martes','Miercoles','Jueves','Viernes','Sábado','Domingo']">
+        <ion-item *ngFor="let item of ['Lunes','Martes','Miercoles','Jueves','Viernes','Sábado','Domingo']" routerLink="/assign-routines">
           <ion-label>{{item}}</ion-label>
-          <ion-select interface="popover">
-            <ion-select-option value="r1">Rutina {{item}}</ion-select-option>
-            <ion-select-option value="r2">Rutina {{item}}</ion-select-option>
-            <ion-select-option value="r3">Rutina {{item}}</ion-select-option>
-            <ion-select-option value="r1">Rutina {{item}}</ion-select-option>
-            <ion-select-option value="r2">Rutina {{item}}</ion-select-option>
-            <ion-select-option value="r3">Rutina {{item}}</ion-select-option>
-            <ion-select-option value="r1">Rutina {{item}}</ion-select-option>
-            <ion-select-option value="r2">Rutina {{item}}</ion-select-option>
-            <ion-select-option value="r3">Rutina {{item}}</ion-select-option>
-            <ion-select-option value="r1">Rutina {{item}}</ion-select-option>
-            <ion-select-option value="r2">Rutina {{item}}</ion-select-option>
-            <ion-select-option value="r3">Rutina {{item}}</ion-select-option>
-            <ion-select-option value="r1">Rutina {{item}}</ion-select-option>
-            <ion-select-option value="r2">Rutina {{item}}</ion-select-option>
-            <ion-select-option value="r3">Rutina {{item}}</ion-select-option>
-            <ion-select-option value="r1">Rutina {{item}}</ion-select-option>
-            <ion-select-option value="r2">Rutina {{item}}</ion-select-option>
-            <ion-select-option value="r3">Rutina {{item}}</ion-select-option>
-            <ion-select-option value="r1">Rutina {{item}}</ion-select-option>
-            <ion-select-option value="r2">Rutina {{item}}</ion-select-option>
-            <ion-select-option value="r3">Rutina {{item}}</ion-select-option>
-            <ion-select-option value="r1">Rutina {{item}}</ion-select-option>
-            <ion-select-option value="r2">Rutina {{item}}</ion-select-option>
-            <ion-select-option value="r3">Rutina {{item}}</ion-select-option>
-            <ion-select-option value="r1">Rutina {{item}}</ion-select-option>
-            <ion-select-option value="r2">Rutina {{item}}</ion-select-option>
-            <ion-select-option value="r3">Rutina {{item}}</ion-select-option>
-            <ion-select-option value="r1">Rutina {{item}}</ion-select-option>
-            <ion-select-option value="r2">Rutina {{item}}</ion-select-option>
-            <ion-select-option value="r3">Rutina {{item}}</ion-select-option>
-            <ion-select-option value="r3">Rutina {{item}}</ion-select-option>
-          </ion-select>
         </ion-item>
       </ion-list>
     </div>
@@ -139,7 +107,7 @@
         <h6>Dietas para la semana</h6>
       </ion-text>
       <ion-list class="ion-padding">
-        <ion-item *ngFor="let item of ['Lunes','Martes','Miercoles','Jueves','Viernes','Sábado','Domingo']">
+        <ion-item *ngFor="let item of ['Lunes','Martes','Miercoles','Jueves','Viernes','Sábado','Domingo']" routerLink="/assign-diets">
           <ion-label>{{item}}</ion-label>
           <ion-select interface="popover">
             <ion-select-option value="r1">Dieta {{item}}</ion-select-option>
