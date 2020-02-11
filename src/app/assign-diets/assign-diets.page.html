@@ -1,9 +1,70 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>assign-diets</ion-title>
+    <ion-buttons slot="start">
+      <ion-buttons>
+        <ion-back-button text="" defaultHref="/tabs-s"></ion-back-button>
+      </ion-buttons>
+    </ion-buttons>
+    <ion-title>Mis dietas</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <ion-radio-group>
+    <div *ngFor="let item of ['Día de entrenamiento','Domingos','Ensaladas','Dieta masa muscular','Bajar de peso']">
+      <ion-grid fixed class="ion-no-margin ion-no-padding">
+        <ion-row class="mp-0">
+          <ion-col size="9" class="mp-0">
+
+            <ion-list>
+              <ion-item lines="none">
+                <ion-label>{{item}}</ion-label>
+                <ion-radio color="primary" slot="start" value={{item}}></ion-radio>
+                <!-- <ion-checkbox color="primary" slot="start"></ion-checkbox> -->
+              </ion-item>
+            </ion-list>
+
+          </ion-col>
+          <ion-col size="3" class="mp-0">
+            <ion-list>
+              <ion-item lines="none">
+                <ion-icon slot="end" mode="ios" name="arrow-down"></ion-icon>
+                <!-- <ion-icon slot="end" mode="ios" name="arrow-up"></ion-icon> -->
+              </ion-item>
+            </ion-list>
+
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+
+      <div>
+        <ion-grid fixed class="ion-no-margin ion-no-padding">
+          <ion-row class="mp-0">
+            <ion-col class="mp-0" size="4" *ngFor="let item of [1,1,1,1,1,1]">
+              <div class="card-portrait p-1" routerLink="/exercise-detail">
+                <img class="img-card-portrait"
+                  src="https://images.unsplash.com/photo-1540420773420-3366772f4999?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=631&q=80" />
+                <div class="card-content">
+                  <div class="card-description">
+                    <ion-text color="white">
+                      Lorem ipsum dolor
+                    </ion-text>
+                  </div>
+                  <div class="card-options">
+                    <div class="ion-text-center">
+                      <ion-icon name="more" color="white"></ion-icon>
+                      <!-- <ion-checkbox color="primary"></ion-checkbox> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </div>
+
+    </div>
+  </ion-radio-group>
 
 </ion-content>
