@@ -11,5 +11,7 @@ export class AssignRoutinesPage implements OnInit {
 
   ngOnInit() {
   }
-
+  onClick(){
+    console.log("arrive");
+  }
 }
