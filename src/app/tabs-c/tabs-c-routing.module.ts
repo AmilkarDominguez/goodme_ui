@@ -4,10 +4,10 @@ import { Routes, RouterModule } from '@angular/router';
 import { TabsCPage } from './tabs-c.page';
 
 const routes: Routes = [
-  {
-    path: '',
-    redirectTo: 'tab-c/home',
-  },
+  // {
+  //   path: '',
+  //   redirectTo: 'tab-c/home',
+  // },
   {
     path: '',
     component: TabsCPage,
