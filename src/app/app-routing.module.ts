@@ -96,6 +96,14 @@ const routes: Routes = [
     path: 'assign-diets',
     loadChildren: () => import('./assign-diets/assign-diets.module').then( m => m.AssignDietsPageModule)
   },
+  {
+    path: 'tab-s-coach-routines',
+    loadChildren: () => import('./tab-s-coach-routines/tab-s-coach-routines.module').then( m => m.TabSCoachRoutinesPageModule)
+  },
+  {
+    path: 'tab-s-coach-diets',
+    loadChildren: () => import('./tab-s-coach-diets/tab-s-coach-diets.module').then( m => m.TabSCoachDietsPageModule)
+  },
 ];
 
 @NgModule({

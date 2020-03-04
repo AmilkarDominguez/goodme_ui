@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Mis entrenadores</ion-title>
+  </ion-toolbar>
+  <ion-toolbar>
+    <ion-searchbar></ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list class="ion-padding">
+    <ion-item *ngFor="let item of [1,2,3,4,5]" routerLink="/tabs-s/routines">
+      <ion-icon slot="end" name="more"></ion-icon>
+      <ion-avatar slot="start">
+        <img src="/assets/icons/user.svg">
+      </ion-avatar>
+      <ion-label>Nombre entrenador {{item}}</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

@@ -22,11 +22,32 @@ const routes: Routes = [
         ]
       },
       {
+        path: 'routines-coach',
+        children: [
+          {
+            path: '',
+            loadChildren: '../tab-s-coach-routines/tab-s-coach-routines.module#TabSCoachRoutinesPageModule'
+            
+          }
+        ]
+      },
+      {
         path: 'routines',
         children: [
           {
             path: '',
             loadChildren: '../tab-s-routines/tab-s-routines.module#TabSRoutinesPageModule'
+            
+          }
+        ]
+      },
+      {
+        path: 'diets-coach',
+        children: [
+          {
+            path: '',
+            loadChildren: '../tab-s-coach-diets/tab-s-coach-diets.module#TabSCoachDietsPageModule'
+            
           }
         ]
       },
